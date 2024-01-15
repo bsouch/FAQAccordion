@@ -15,13 +15,17 @@ $font-weight-700: 700;
 
 $icon-background-pattern-desktop: url("../images/background-pattern-desktop.svg");
 $icon-background-pattern-mobile: url("../images/background-pattern-mobile.svg");
+$icon-minus: url("../images/icon-minus.svg");
+$icon-plus: url("../images/icon-plus.svg");
 
 $size-full: 100dvh;
+$size-full-parent: 100%;
 $size-half-parent: 50%;
 $size-half-parent-negative: -50%;
 
 $spacing-standard: 20px;
+$spacing-md: 15px;
 
-$border-radius: 5px;
+$border-radius: 8px;
 
 $box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

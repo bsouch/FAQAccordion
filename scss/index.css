@@ -27,7 +27,7 @@ main .card {
   max-width: 300px;
   background-color: hsl(0deg, 0%, 100%);
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 8px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   gap: 20px;
 }
@@ -44,6 +44,29 @@ main .card .cardHeader .star {
 main .card .cardHeader .cardHeaderText {
   font-size: 1.5625rem;
   font-weight: 700;
+}
+main .card .cardBody {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+main .card .cardBody hr {
+  width: 100%;
+  opacity: 0.3;
+}
+main .card .cardBody .cardRow .sectionHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 600;
+  justify-content: space-between;
+  gap: 20px;
+}
+main .card .cardBody .cardRow .sectionHeader .iconContainer .sectionIcon {
+  display: block;
+  background-image: url("../images/icon-plus.svg");
+  height: 30px;
+  width: 30px;
 }
 
 @media (max-width: 375px) {
