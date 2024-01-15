@@ -72,6 +72,9 @@ main .card .cardBody .cardRow .sectionHeader .iconContainer .sectionIcon {
   height: 30px;
   width: 30px;
 }
+main .card .cardBody .cardRow .sectionHeader .iconContainer .sectionIcon.minus {
+  background-image: url("../images/icon-minus.svg");
+}
 
 @media (max-width: 375px) {
   main .headBanner {

@@ -22,7 +22,7 @@
             <div class="cardBody">
 
                 <div class="cardRow">
-                    <div class="sectionHeader" onclick="ToggleDrawer(this)">
+                    <div class="sectionHeader">
                         <span class="headerText">
                             What is Frontend Mentor, and how will it help me?
                         </span>
@@ -103,3 +103,14 @@
 </body>
 
 </html>
+
+<script>
+    (() => {
+        var sectionHeaders = document.querySelectorAll('.sectionHeader');
+        for (var i = 0; i < sectionHeaders.length; i++) {
+            sectionHeaders[i].addEventListener('click', function () {
+                ToggleDrawer(this);
+            });
+        }
+    })();
+</script>

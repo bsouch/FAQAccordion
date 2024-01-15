@@ -1,5 +1,3 @@
-
-
 const ToggleDrawer = (element) => {
-    console.log(element);
+    element.querySelector('.sectionIcon').classList.toggle('minus');
 }

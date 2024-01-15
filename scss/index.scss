@@ -79,6 +79,10 @@ main {
                             background-image: $icon-plus;
                             height: 30px;
                             width: 30px;
+
+                            &.minus {
+                                background-image: $icon-minus;
+                            }
                         }
                     }
                 }
