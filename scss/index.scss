@@ -1,0 +1,35 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+main {
+    position: relative;
+    min-block-size: $size-full;
+    background-color: $colour-light-pink;
+
+    .initHidden {
+        display: none;
+    }
+
+    .headBanner {
+        @include imageCoverFullWidth;
+        display: block;
+        background-image: $icon-background-pattern-desktop;
+        height: 200px;
+        width: 100%;
+    }
+
+    .card {
+        @include displayAbsoluteCenter;
+        @include displayFlexCol;
+        max-width: 300px;
+        background-color: $colour-white;
+    }
+}
+
+@media (max-width: $page-break-mobile) {
+    main {
+        .headBanner {
+            background-image: $icon-background-pattern-mobile;
+        }
+    }
+}

@@ -1,3 +1,34 @@
+main {
+  position: relative;
+  min-block-size: 100dvh;
+  background-color: hsl(275deg, 100%, 97%);
+}
+main .initHidden {
+  display: none;
+}
+main .headBanner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  background-image: url("../images/background-pattern-desktop.svg");
+  height: 200px;
+  width: 100%;
+}
+main .card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  background-color: hsl(0deg, 0%, 100%);
+}
 
+@media (max-width: 375px) {
+  main .headBanner {
+    background-image: url("../images/background-pattern-mobile.svg");
+  }
+}
 
 /*# sourceMappingURL=index.css.map */
