@@ -7,6 +7,7 @@ $colour-greyish-purple: hsl(292, 16%, 49%);
 $colour-dark-purple: hsl(292, 42%, 14%);
 
 $font-size-paragraph: 1rem;
+$font-size-header: 1.5625rem;
 $font-family: "Work Sans";
 $font-weight-400: 400;
 $font-weight-600: 600;
@@ -18,3 +19,9 @@ $icon-background-pattern-mobile: url("../images/background-pattern-mobile.svg");
 $size-full: 100dvh;
 $size-half-parent: 50%;
 $size-half-parent-negative: -50%;
+
+$spacing-standard: 20px;
+
+$border-radius: 5px;
+
+$box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

@@ -3,6 +3,9 @@ main {
   min-block-size: 100dvh;
   background-color: hsl(275deg, 100%, 97%);
 }
+main span {
+  font-family: "Work Sans";
+}
 main .initHidden {
   display: none;
 }
@@ -23,6 +26,24 @@ main .card {
   flex-direction: column;
   max-width: 300px;
   background-color: hsl(0deg, 0%, 100%);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  gap: 20px;
+}
+main .card .cardHeader {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+}
+main .card .cardHeader .star {
+  height: 20px;
+  width: 20px;
+}
+main .card .cardHeader .cardHeaderText {
+  font-size: 1.5625rem;
+  font-weight: 700;
 }
 
 @media (max-width: 375px) {

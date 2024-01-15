@@ -6,6 +6,10 @@ main {
     min-block-size: $size-full;
     background-color: $colour-light-pink;
 
+    span {
+        font-family: $font-family;
+    }
+
     .initHidden {
         display: none;
     }
@@ -23,6 +27,28 @@ main {
         @include displayFlexCol;
         max-width: 300px;
         background-color: $colour-white;
+        padding: $spacing-standard;
+        border-radius: $border-radius;
+        box-shadow: $box-shadow;
+        gap: $spacing-standard;
+
+        .cardHeader {
+            @include displayFlexRow;
+            gap: 15px;
+            align-items: center;
+
+            .star {
+                height: 20px;
+                width: 20px;
+            }
+
+            .cardHeaderText {
+                font-size: $font-size-header;
+                font-weight: $font-weight-700;
+            }
+
+        }
+
     }
 }
 
