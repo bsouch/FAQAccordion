@@ -61,6 +61,10 @@ main .card .cardBody .cardRow .sectionHeader {
   font-weight: 600;
   justify-content: space-between;
   gap: 20px;
+  cursor: pointer;
+}
+main .card .cardBody .cardRow .sectionHeader:hover {
+  color: #9933ff;
 }
 main .card .cardBody .cardRow .sectionHeader .iconContainer .sectionIcon {
   display: block;

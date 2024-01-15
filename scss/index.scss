@@ -66,6 +66,11 @@ main {
                     font-weight: $font-weight-600;
                     justify-content: space-between;
                     gap: $spacing-standard;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $colour-purple;
+                    }
 
                     .iconContainer {
 
