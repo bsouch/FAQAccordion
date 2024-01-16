@@ -23,7 +23,7 @@ main .card {
   flex-direction: column;
   width: clamp(310px, 50%, 460px);
   background-color: hsl(0deg, 0%, 100%);
-  padding: 20px;
+  padding: 30px;
   border-radius: 8px;
   box-shadow: 0 1px 16px 0 rgba(0, 0, 0, 0.2);
   gap: 25px;
