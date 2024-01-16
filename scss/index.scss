@@ -16,19 +16,19 @@ main {
         @include imageCoverFullWidth;
         display: block;
         background-image: $icon-background-pattern-desktop;
-        height: 200px;
+        height: 250px;
         width: $size-full-parent;
     }
 
     .card {
         @include displayAbsoluteCenter;
         @include displayFlexCol;
-        max-width: 300px;
+        width: clamp(310px, 50%, 460px);
         background-color: $colour-white;
         padding: $spacing-standard;
         border-radius: $border-radius;
         box-shadow: $box-shadow;
-        gap: $spacing-standard;
+        gap: $spacing-lg;
 
         span,
         div.sectionInfo {
@@ -41,8 +41,8 @@ main {
             align-items: center;
 
             .star {
-                height: 20px;
-                width: 20px;
+                height: 25px;
+                width: 25px;
             }
 
             .cardHeaderText {
@@ -91,7 +91,10 @@ main {
                 }
 
                 .sectionInfo {
-                    border: 1px solid transparent;
+                    color: $colour-grey;
+                    margin-top: $spacing-standard;
+                    font-size: $font-size-paragraph;
+                    line-height: $spacing-standard;
                 }
             }
         }

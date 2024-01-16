@@ -11,7 +11,7 @@ main .headBanner {
   background-size: cover;
   display: block;
   background-image: url("../images/background-pattern-desktop.svg");
-  height: 200px;
+  height: 250px;
   width: 100%;
 }
 main .card {
@@ -21,12 +21,12 @@ main .card {
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
-  max-width: 300px;
+  width: clamp(310px, 50%, 460px);
   background-color: hsl(0deg, 0%, 100%);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  gap: 20px;
+  gap: 25px;
 }
 main .card span,
 main .card div.sectionInfo {
@@ -39,11 +39,11 @@ main .card .cardHeader {
   align-items: center;
 }
 main .card .cardHeader .star {
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
 }
 main .card .cardHeader .cardHeaderText {
-  font-size: 1.5625rem;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 main .card .cardBody {
@@ -77,7 +77,10 @@ main .card .cardBody .cardRow .sectionHeader .iconContainer .sectionIcon.minus {
   background-image: url("../images/icon-minus.svg");
 }
 main .card .cardBody .cardRow .sectionInfo {
-  border: 1px solid transparent;
+  color: gray;
+  margin-top: 20px;
+  font-size: 0.875rem;
+  line-height: 20px;
 }
 
 @media (max-width: 375px) {
