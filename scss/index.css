@@ -11,7 +11,7 @@ main .headBanner {
   background-size: cover;
   display: block;
   background-image: url("../images/background-pattern-desktop.svg");
-  height: 250px;
+  height: 420px;
   width: 100%;
 }
 main .card {
