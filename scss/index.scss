@@ -6,9 +6,7 @@ main {
     min-block-size: $size-full;
     background-color: $colour-light-pink;
 
-    span {
-        font-family: $font-family;
-    }
+    span {}
 
     .initHidden {
         display: none;
@@ -31,6 +29,11 @@ main {
         border-radius: $border-radius;
         box-shadow: $box-shadow;
         gap: $spacing-standard;
+
+        span,
+        div.sectionInfo {
+            font-family: $font-family;
+        }
 
         .cardHeader {
             @include displayFlexRow;
@@ -85,6 +88,10 @@ main {
                             }
                         }
                     }
+                }
+
+                .sectionInfo {
+                    border: 1px solid transparent;
                 }
             }
         }

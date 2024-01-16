@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="scss/normalise.css">
     <link rel="stylesheet" href="scss/index.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/index.js"></script>
     <title>FAQAccordion</title>
 </head>
@@ -30,11 +31,11 @@
                             <span class="sectionIcon"></span>
                         </div>
                     </div>
-                    <span class="sectionInfo initHidden">
+                    <div class="sectionInfo initHidden">
                         Frontend Mentor offers realistic coding challenges to help developers improve their
                         frontend coding skills with projects in HTML, CSS, and JavaScript.
                         It's suitable for all levels abd ideal for portfolio building.
-                    </span>
+                    </div>
                 </div>
 
                 <hr />
@@ -48,13 +49,13 @@
                             <span class="sectionIcon"></span>
                         </div>
                     </div>
-                    <span class="sectionInfo initHidden">
+                    <div class="sectionInfo initHidden">
                         The majority of our challenges are free, yes.
                         We do have some that are premium and require a
                         <a href="https://www.frontendmentor.io/pro">Pro subscription</a> to access.
                         It will say on each challenge whether they are free or premium, so it's easy to tell the
                         difference.
-                    </span>
+                    </div>
                 </div>
 
                 <hr />
@@ -68,11 +69,11 @@
                             <span class="sectionIcon"></span>
                         </div>
                     </div>
-                    <span class="sectionInfo initHidden">
+                    <div class="sectionInfo initHidden">
                         Definitely! Please do feel free to use whatever you build in your portfolio.
                         Helping developers add professional-looking projects to their portfolio
                         was one of the reasons we created this platform!
-                    </span>
+                    </div>
                 </div>
 
                 <hr />
@@ -86,7 +87,7 @@
                             <span class="sectionIcon"></span>
                         </div>
                     </div>
-                    <span class="sectionInfo initHidden">
+                    <div class="sectionInfo initHidden">
                         The best (and quickest) way to get help on a challenge is in our Discord server.
                         There are thousands of other developers in there,
                         so it's a great place to ask questions.
@@ -94,7 +95,7 @@
                         If you haven't joined yet, you can
                         <a target="_blank" href="https://discord.com/invite/">get an invite to our Discord server
                             here</a>.
-                    </span>
+                    </div>
                 </div>
 
             </div>
@@ -103,14 +104,3 @@
 </body>
 
 </html>
-
-<script>
-    (() => {
-        var sectionHeaders = document.querySelectorAll('.sectionHeader');
-        for (var i = 0; i < sectionHeaders.length; i++) {
-            sectionHeaders[i].addEventListener('click', function () {
-                ToggleDrawer(this);
-            });
-        }
-    })();
-</script>

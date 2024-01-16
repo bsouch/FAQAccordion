@@ -3,9 +3,6 @@ main {
   min-block-size: 100dvh;
   background-color: hsl(275deg, 100%, 97%);
 }
-main span {
-  font-family: "Work Sans";
-}
 main .initHidden {
   display: none;
 }
@@ -30,6 +27,10 @@ main .card {
   border-radius: 8px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   gap: 20px;
+}
+main .card span,
+main .card div.sectionInfo {
+  font-family: "Work Sans";
 }
 main .card .cardHeader {
   display: flex;
@@ -74,6 +75,9 @@ main .card .cardBody .cardRow .sectionHeader .iconContainer .sectionIcon {
 }
 main .card .cardBody .cardRow .sectionHeader .iconContainer .sectionIcon.minus {
   background-image: url("../images/icon-minus.svg");
+}
+main .card .cardBody .cardRow .sectionInfo {
+  border: 1px solid transparent;
 }
 
 @media (max-width: 375px) {
