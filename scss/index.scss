@@ -1,0 +1,110 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+main {
+    position: relative;
+    min-block-size: $size-full;
+    background-color: $colour-light-pink;
+
+    span {}
+
+    .initHidden {
+        display: none;
+    }
+
+    .headBanner {
+        @include imageCoverFullWidth;
+        display: block;
+        background-image: $icon-background-pattern-desktop;
+        height: 250px;
+        width: $size-full-parent;
+    }
+
+    .card {
+        @include displayAbsoluteCenter;
+        @include displayFlexCol;
+        width: clamp(310px, 50%, 460px);
+        background-color: $colour-white;
+        padding: $spacing-standard;
+        border-radius: $border-radius;
+        box-shadow: $box-shadow;
+        gap: $spacing-lg;
+
+        span,
+        div.sectionInfo {
+            font-family: $font-family;
+        }
+
+        .cardHeader {
+            @include displayFlexRow;
+            gap: $spacing-md;
+            align-items: center;
+
+            .star {
+                height: 25px;
+                width: 25px;
+            }
+
+            .cardHeaderText {
+                font-size: $font-size-header;
+                font-weight: $font-weight-700;
+            }
+
+        }
+
+        .cardBody {
+            @include displayFlexCol;
+            gap: $spacing-md;
+
+            hr {
+                width: $size-full-parent;
+                opacity: 0.3;
+            }
+
+            .cardRow {
+
+                .sectionHeader {
+                    @include displayFlexRow;
+                    align-items: center;
+                    font-weight: $font-weight-600;
+                    justify-content: space-between;
+                    gap: $spacing-standard;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $colour-purple;
+                    }
+
+                    .iconContainer {
+
+                        .sectionIcon {
+                            display: block;
+                            background-image: $icon-plus;
+                            height: 30px;
+                            width: 30px;
+
+                            &.minus {
+                                background-image: $icon-minus;
+                            }
+                        }
+                    }
+                }
+
+                .sectionInfo {
+                    color: $colour-grey;
+                    margin-top: $spacing-standard;
+                    font-size: $font-size-paragraph;
+                    line-height: $spacing-standard;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $page-break-mobile) {
+    main {
+        .headBanner {
+            background-image: $icon-background-pattern-mobile;
+        }
+    }
+}

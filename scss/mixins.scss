@@ -1,0 +1,28 @@
+@import "./variables.scss";
+
+@mixin displayGridCenter {
+    display: grid;
+    place-content: center;
+}
+
+@mixin displayAbsoluteCenter {
+    position: absolute;
+    top: $size-half-parent;
+    left: $size-half-parent;
+    transform: translate($size-half-parent-negative, $size-half-parent-negative);
+}
+
+@mixin displayFlexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin displayFlexCol {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin imageCoverFullWidth {
+    background-repeat: no-repeat;
+    background-size: cover;
+}

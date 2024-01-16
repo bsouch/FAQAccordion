@@ -1,3 +1,92 @@
+main {
+  position: relative;
+  min-block-size: 100dvh;
+  background-color: hsl(275deg, 100%, 97%);
+}
+main .initHidden {
+  display: none;
+}
+main .headBanner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  background-image: url("../images/background-pattern-desktop.svg");
+  height: 250px;
+  width: 100%;
+}
+main .card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  width: clamp(310px, 50%, 460px);
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 16px 0 rgba(0, 0, 0, 0.2);
+  gap: 25px;
+}
+main .card span,
+main .card div.sectionInfo {
+  font-family: "Work Sans";
+}
+main .card .cardHeader {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+}
+main .card .cardHeader .star {
+  height: 25px;
+  width: 25px;
+}
+main .card .cardHeader .cardHeaderText {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+main .card .cardBody {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+main .card .cardBody hr {
+  width: 100%;
+  opacity: 0.3;
+}
+main .card .cardBody .cardRow .sectionHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 600;
+  justify-content: space-between;
+  gap: 20px;
+  cursor: pointer;
+}
+main .card .cardBody .cardRow .sectionHeader:hover {
+  color: #9933ff;
+}
+main .card .cardBody .cardRow .sectionHeader .iconContainer .sectionIcon {
+  display: block;
+  background-image: url("../images/icon-plus.svg");
+  height: 30px;
+  width: 30px;
+}
+main .card .cardBody .cardRow .sectionHeader .iconContainer .sectionIcon.minus {
+  background-image: url("../images/icon-minus.svg");
+}
+main .card .cardBody .cardRow .sectionInfo {
+  color: gray;
+  margin-top: 20px;
+  font-size: 0.875rem;
+  line-height: 20px;
+}
 
+@media (max-width: 375px) {
+  main .headBanner {
+    background-image: url("../images/background-pattern-mobile.svg");
+  }
+}
 
 /*# sourceMappingURL=index.css.map */
